@@ -1,0 +1,28 @@
+@use '../variables';
+
+.button {
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    white-space: nowrap;
+    border-radius: 5px;
+    margin-left: 18px;
+
+    &--primary {
+        color: #fff;
+        background-color: #ff0000; // Cor de fundo vermelho brilhante
+        transition: background-color 0.3s;
+
+        &:hover {
+            background-color: #b30000; // Fundo vermelho escuro ao passar o mouse
+        }
+    }
+
+    @media (max-width: 640px) {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+}

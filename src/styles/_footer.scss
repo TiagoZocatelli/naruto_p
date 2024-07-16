@@ -1,0 +1,94 @@
+@use 'variables';
+
+.footer {
+    background-color: #1c1c1c;
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+
+    &__content {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 40px;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__section {
+        flex: 1;
+        min-width: 200px;
+
+        &__title {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        &__description {
+            font-size: 16px;
+            color: #dcdcdc;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        &__links {
+            list-style: none;
+            padding: 0;
+
+            li {
+                margin-bottom: 10px;
+
+                a {
+                    color: #fff;
+                    text-decoration: none;
+                    font-size: 16px;
+                    transition: color 0.3s;
+
+                    &:hover {
+                        color: variables.$textColor;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+        &__social {
+            display: flex;
+            gap: 15px;
+
+            a {
+                display: inline-block;
+                width: 32px;
+                height: 32px;
+                transition: transform 0.3s;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    filter: brightness(0) invert(1);
+                }
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+
+    &__bottom {
+        margin-top: 30px;
+        font-size: 16px;
+        color: #dcdcdc;
+
+        @media (max-width: 768px) {
+            margin-top: 20px;
+        }
+    }
+}

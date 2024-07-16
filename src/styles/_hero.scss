@@ -1,0 +1,58 @@
+@use 'variables';
+
+.hero {
+    padding-top: 64px;
+    padding-bottom: 100px;
+    background-image: url(../images/123.png);
+    background-repeat: no-repeat;
+    background-size: cover;  
+    background-position: center;  
+    position: relative;
+
+    .container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: variables.$secundaryTextColor;
+        content: '';
+        opacity: 0.4;
+    }
+
+    &__text {
+        margin-top: 24px;
+        margin-bottom: 24px;
+        font-size: 32px;
+        line-height: 40px;
+        font-weight: 800;
+        text-align: center;
+        color: #fff;
+    }
+
+    &__logo {
+        height: 100px;
+        display: block;
+    }
+
+    @media (max-width: 640px) {
+        padding: 40px 0;
+
+        &__logo {
+            height: 60px;
+        }
+
+        &__text  {
+            font-size: 24px;
+            line-height: 28px;
+            margin: 16px 0;
+        }
+    }
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento de Anime</title>
+    <link rel="stylesheet" href="./styles/main.scss">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+    <header class="hero">
+        <div class="container">
+            <img class="hero__logo" src="./images/pngwing.com.png" alt="Logo do Evento">
+            <p class="hero__text">
+                O maior evento de anime! Nova temporada de Naruto estreia em <span id="contador"></span>
+            </p>
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Local:</b>  
+                        Allianz Parque, Barra Funda, São Paulo
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Ingressos:</b>    
+                        A partir de R$ 120,00
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Data e Horário:</b>   
+                        12 de dezembro de 2022, às 19h
+                    </li>
+                </ul>
+                <a href="#" class="button button--primary">
+                    Garanta sua vaga
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="event event--frontend">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Naruto Shippuden</h2>
+                <p class="event__details__description">
+                    Junte-se a nós para celebrar a nova temporada de Naruto Shippuden. Experimente a jornada épica de Naruto Uzumaki enquanto ele luta para se tornar o Hokage de Konoha.
+                </p>
+            </div>
+            <img class="event__image" src="./images/598847.jpg" alt="Naruto Shippuden">
+        </div>
+    </section>
+
+    <section class="event event--ui-ux event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Personagens Icônicos</h2>
+                <p class="event__details__description">
+                    Conheça mais sobre os personagens icônicos de Naruto, como Sasuke Uchiha, Sakura Haruno, e Kakashi Hatake. Descubra as histórias e motivações que os tornam tão memoráveis.
+                </p>
+            </div>
+            <img class="event__image" src="./images/605592.png" alt="Personagens de Naruto">
+        </div>
+    </section>
+
+    <section class="event event--data-science">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Momentos Épicos</h2>
+                <p class="event__details__description">
+                    Reviva os momentos mais épicos da série Naruto. Desde batalhas emocionantes até reviravoltas inesperadas, relembre os eventos que marcaram a jornada de Naruto.
+                </p>
+            </div>
+            <img class="event__image" src="./images/665373.jpg" alt="Momentos Épicos de Naruto">
+        </div>
+    </section>
+
+    <section class="event event--backend event--image-left">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Músicas Memoráveis</h2>
+                <p class="event__details__description">
+                    A música sempre teve um papel crucial em Naruto. Conheça as trilhas sonoras que emocionaram os fãs e deram vida às cenas mais intensas da série.
+                </p>
+            </div>
+            <img class="event__image" src="./images/1342989.png" alt="Músicas de Naruto">
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h3 class="footer__title">Sobre o Evento</h3>
+                    <p class="footer__description">O maior evento de anime focado em Naruto, trazendo novidades, personagens e momentos inesquecíveis.</p>
+                </div>
+                <div class="footer__section">
+                    <h3 class="footer__title">Links Úteis</h3>
+                    <ul class="footer__links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Programação</a></li>
+                        <li><a href="#">Ingressos</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h3 class="footer__title">Siga-nos</h3>
+                    <div class="footer__social">
+                        <a href="#"><img src="./images/facebook-icon.png" alt="Facebook"></a>
+                        <a href="#"><img src="./images/twitter-icon.png" alt="Twitter"></a>
+                        <a href="#"><img src="./images/instagram-icon.png" alt="Instagram"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2022 Evento de Anime. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="./scripts/main.js"></script>
+</body>
+
+</html>
